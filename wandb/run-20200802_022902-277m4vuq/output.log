@@ -1,0 +1,22 @@
+Device: cuda
+Epochs: 1  train_loss: 42.345829010009766  val_loss: 33.797  ShiftDiff: 99.51 %  swADiff: 78.68 %  swBDiff: 91.64999999999999 %
+Epochs: 2  train_loss: 42.28555679321289  val_loss: 31.7384  ShiftDiff: 98.4 %  swADiff: 71.75 %  swBDiff: 85.59 %
+Epochs: 3  train_loss: 42.07481384277344  val_loss: 29.6908  ShiftDiff: 96.45 %  swADiff: 64.63 %  swBDiff: 79.85 %
+Epochs: 4  train_loss: 33.15977478027344  val_loss: 27.6692  ShiftDiff: 93.94 %  swADiff: 57.85 %  swBDiff: 74.51 %
+Epochs: 5  train_loss: 33.596588134765625  val_loss: 25.6672  ShiftDiff: 91.08000000000001 %  swADiff: 53.06999999999999 %  swBDiff: 69.19999999999999 %
+Epochs: 6  train_loss: 31.454378128051758  val_loss: 23.6768  ShiftDiff: 87.92999999999999 %  swADiff: 50.760000000000005 %  swBDiff: 63.71 %
+Epochs: 7  train_loss: 29.986637115478516  val_loss: 21.7127  ShiftDiff: 84.6 %  swADiff: 49.419999999999995 %  swBDiff: 58.830000000000005 %
+Epochs: 8  train_loss: 24.026166915893555  val_loss: 19.7925  ShiftDiff: 81.05 %  swADiff: 48.559999999999995 %  swBDiff: 54.66 %
+Epochs: 9  train_loss: 26.04658317565918  val_loss: 17.9471  ShiftDiff: 77.37 %  swADiff: 49.09 %  swBDiff: 52.33 %
+Epochs: 10  train_loss: 22.590787887573242  val_loss: 16.1866  ShiftDiff: 73.61 %  swADiff: 50.449999999999996 %  swBDiff: 51.160000000000004 %
+Epochs: 11  train_loss: 22.513587951660156  val_loss: 14.5367  ShiftDiff: 69.67999999999999 %  swADiff: 52.73 %  swBDiff: 49.91 %
+Epochs: 12  train_loss: 16.1717586517334  val_loss: 13.0306  ShiftDiff: 65.59 %  swADiff: 56.19 %  swBDiff: 49.43 %
+Epochs: 13  train_loss: 17.030155181884766  val_loss: 11.7112  ShiftDiff: 61.4 %  swADiff: 60.370000000000005 %  swBDiff: 50.2 %
+Epochs: 14  train_loss: 14.952884674072266  val_loss: 10.607  ShiftDiff: 57.06 %  swADiff: 65.59 %  swBDiff: 51.62 %
+Epochs: 15  train_loss: 15.592794418334961  val_loss: 9.7308  ShiftDiff: 52.629999999999995 %  swADiff: 71.31 %  swBDiff: 54.459999999999994 %
+Epochs: 16  train_loss: 12.72540283203125  val_loss: 9.0833  ShiftDiff: 48.089999999999996 %  swADiff: 76.82 %  swBDiff: 57.96 %
+Epochs: 17  train_loss: 10.962458610534668  val_loss: 8.6439  ShiftDiff: 43.419999999999995 %  swADiff: 81.95 %  swBDiff: 61.8 %
+Epochs: 18  train_loss: 10.466909408569336  val_loss: 8.3627  ShiftDiff: 39.33 %  swADiff: 86.26 %  swBDiff: 65.81 %
+Epochs: 19  train_loss: 11.204253196716309  val_loss: 8.175  ShiftDiff: 36.18 %  swADiff: 89.36 %  swBDiff: 69.3 %
+Epochs: 20  train_loss: 10.272453308105469  val_loss: 8.025  ShiftDiff: 33.54 %  swADiff: 91.43 %  swBDiff: 71.75 %
+finish
