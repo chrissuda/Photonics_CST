@@ -1,0 +1,26 @@
+*** File Version: 17.00
+
+Number of ports: 0
+Portnames:
+Modenumbers:
+Portlabels:
+StaticSources:
+ThermalSources:
+FloquetPortNames: "Zmin" "Zmax"
+FloquetPortModes: 2 2
+Terminals:
+TerminalToReferenceTable:
+StaticSourceGroups:
+ThermalSourceGroups:
+TerminalSourceGroups:
+PortSourceGroups:
+FloquetPortSourceGroups:
+Number of frequency-points: 0
+Fmin: 1.498962e+14
+Fmax: 5.995849e+14
+Fscale: 1.000000e+15
+
+
+
+
+

@@ -1,0 +1,301 @@
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+*** Warning ***
+This software is licensed for educational purposes only.
+------------------------------------------------------------------------------Units settings:
+Dimensions: mm
+Frequency: GHz
+Time:
+s
+------------------------------------------------------------------------------Boundary conditions:
+YZsymmetry: none
+XZsymmetry: none
+XYsymmetry: none
+Xmin: unit cell
+Xmax: unit cell
+Ymin: unit cell
+Ymax: unit cell
+Zmin: electric
+Zmax: expanded open
+------------------------------------------------------------------------------Order settings:
+Solver order : 2nd (constant)
+Curved elements: up to order 3 (automatic)
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------============================================================================
+====
+Frequency Domain Solver calculation cycle started
+------------------------------------------------------------------------------Solver started at: 03:39 AM Saturday, 01. August 2020
+Module: Frequency Domain: S-Parameter (Win 64)
+Version: 2018.0 Release from 2017-10-26 (change 556462)
+------------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 1 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+------------------------------------------------------------------------------Adaptive mesh refinement pass 1
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------The input reflection seems to be large at 11 GHz, Theta: 0, Phi: 0. The adap
+tive
+mesh refinement at this sample will be stopped. A new mesh adaptation freque
+ncy
+has been added for the monitor at 10 GHz. More...
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 2 of 2 (Frequency: 10 GHz, Theta: 0, Phi: 0)
+
+------------------------------------------------------------------------------Adaptive mesh refinement pass 1
+-------------------------------------------------------------------------------
+
+File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 2 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 3 of 3 (Frequency: 10.5 GHz, Theta: 0, Phi: 0)
+
+------------------------------------------------------------------------------Adaptive mesh refinement pass 1
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------The input reflection seems to be large at 10.5 GHz, Theta: 0, Phi: 0. The
+adaptive mesh refinement at this sample will be stopped. A new mesh adaptati
+on
+frequency has been added at 10.75 GHz. More...
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 4 of 4 (Frequency: 10.75 GHz, Theta: 0, Phi: 0)
+
+------------------------------------------------------------------------------Adaptive mesh refinement pass 1
+------------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 3 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+------------------------------------------------------------------------------The input reflection seems to be large at 10.75 GHz, Theta: 0, Phi: 0. The
+adaptive mesh refinement at this sample will be stopped. A new mesh adaptati
+on
+frequency has been added at 10.25 GHz. More...
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 5 of 5 (Frequency: 10.25 GHz, Theta: 0, Phi: 0)
+
+------------------------------------------------------------------------------Adaptive mesh refinement pass 1
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------The input reflection seems to be large at 10.25 GHz, Theta: 0, Phi: 0. The
+adaptive mesh refinement at this sample will be stopped. The mesh adaptation
+is
+performed at 11 GHz again. More...
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 4 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+------------------------------------------------------------------------------Adaptive mesh refinement pass 2
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------*** Warning ***
+The input reflection seems to be large at 11 GHz, Theta: 0, Phi: 0. The mesh
+adaptation sample will not be moved again. Please define a suitable constant
+adaptation frequency. More...
+------------------------------------------------------------------------------Adaptive mesh refinement pass 3
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Delta calculation
+
+------------------------------------------------------------------------------Mesh adaptation terminated because the desired accuracy limit is reached.
+------------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 5 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+Calculation 3 (Frequency: 10.5 GHz, Theta: 0, Phi: 0)
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 4 (Frequency: 10.75 GHz, Theta: 0, Phi: 0)
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 5 (Frequency: 10.25 GHz, Theta: 0, Phi: 0)
+
+------------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 6 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 2 (Frequency: 10 GHz, Theta: 0, Phi: 0)
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculating additional frequency samples due to field monitors, equidistant
+sampling interval, or single frequency sample definitions.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 6 (Frequency: 10.389 GHz, Theta: 0, Phi: 0)
+
+------------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 7 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+------------------------------------------------------------------------------Only few automatic samples have been calculated up to now. Therefore, the
+frequency sweep is continued with additional automatically chosen samples.
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 7 (Frequency: 10.073 GHz, Theta: 0, Phi: 0)
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Calculation 8 (Frequency: 10.907 GHz, Theta: 0, Phi: 0)
+
+-------------------------------------------------------------------------------
+
+File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 8 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+08/01/2020 - 10:06
+
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------Finished the general purpose interpolative broadband frequency sweep:
+All broadband sweep convergence criteria have been satisfied after
+calculating 8 frequency samples:
+Broadband sweep error threshold value :
+0.01 (All S-Parameters)
+Number of error criterion checks
+:
+2 (All S-Parameters)
+Minimum number of samples
+:3
+
+------------------------------------------------------------------------------============================================================================
+====
+
+------------------------------------------------------------------------------Calculating remaining monitors.
+--------------------------------------------------------------------------------------------------------------------------------------------------------Peak memory used (kB)
+Free physical memory (kB
+)
+At begin Minimum
+--------------------------------------------------------------------------Solver start
+15904
+4388364
+4388020
+Eq. system setup
+
+379472
+
+4344984
+
+4063516
+
+Eq. system solve
+
+379472
+
+4313424
+
+4028708
+
+Mesh refinement
+
+343052
+
+4111800
+
+4098376
+
+Solver run total
+
+379472
+
+4388372
+
+4028708
+
+Computer name
+DESKTOP-VEQU8DL
+-------------------------------------------------------------------------File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+Page 9 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+08/01/2020 - 10:06
+
+Page 10 of 11
+
+CST MICROWAVE STUDIO - Solver Results *** University Version ***
+
+File: C:\Users\ab792\Desktop\CST\Dif80\Model\3D\Model.mod
+
+08/01/2020 - 10:06
+
+Page 11 of 11
+
+

@@ -1,0 +1,1068 @@
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+==========================================================================
+Sequence: Sequence 1
+==========================================================================
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 2.5
+swA = 2
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 2.5
+swA = 2
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 46 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 2.5
+swA = 4
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 2.5
+swA = 4
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 2.5
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 1 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+swA = 2
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 46 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 2.5
+swA = 2
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 2.5
+swA = 4
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 2.5
+swA = 4
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 2.5
+swA = 2
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 2 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+tet = 1.3613568
+Shift = 2.5
+swA = 2
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 40 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 2.5
+swA = 4
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 2.5
+swA = 4
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------==========================================================================
+Sequence: Sequence 2
+==========================================================================
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 3.5
+swA = 1.5
+swB = 1.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 3.5
+swA = 1.5
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 3 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 3.5
+swA = 5
+swB = 1.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 3.5
+swA = 5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 3.5
+swA = 1.5
+swB = 1.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 3.5
+swA = 1.5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 4 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Shift = 3.5
+swA = 5
+swB = 1.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 3.5
+swA = 5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 3.5
+swA = 1.5
+swB = 1.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 3.5
+swA = 1.5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 3.5
+swA = 5
+swB = 1.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 5 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+tet = 1.3613568
+Shift = 3.5
+swA = 5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------==========================================================================
+Sequence: Sequence 3
+==========================================================================
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 3
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 3
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 48 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 3
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 36 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 6 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+swA = 5
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 5
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 37 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 8.5
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 18 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 4.5
+swA = 8.5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 20 sec.
+-------------------------------------------------------------------------Parameter Values:
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 7 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+tet = 1.2217305
+Shift = 4.5
+swA = 8.5
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 2 min., 2 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 3
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 3
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 3
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 37 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 5
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+--------------------------------------------------------------------------
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 8 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 48 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 5
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 32 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 8.5
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 27 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 8.5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 35 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 4.5
+swA = 8.5
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 9 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Solver time: 0 hours, 2 min., 1 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 3
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 3
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 3
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 28 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 5
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 5
+swB = 5
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 10 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 5
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 32 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 8.5
+swB = 3
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 37 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 8.5
+swB = 5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 36 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 4.5
+swA = 8.5
+swB = 8.5
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 2 min., 3 sec.
+-------------------------------------------------------------------------==========================================================================
+Sequence: Sequence 4
+==========================================================================
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 11 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 2
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 2
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 2
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 6
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 6
+swB = 6
+Structure update: Successful
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 12 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 6
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 10
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 10
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 5.5
+swA = 10
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 2
+swB = 2
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 13 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 2
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 2
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 6
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 6
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 14 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+swA = 6
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 10
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 10
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 5.5
+swA = 10
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 45 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 2
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 15 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+tet = 1.3613568
+Shift = 5.5
+swA = 2
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 2
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 6
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 6
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 6
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+--------------------------------------------------------------------------
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 16 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 10
+swB = 2
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 10
+swB = 6
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 5.5
+swA = 10
+swB = 10
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 47 sec.
+-------------------------------------------------------------------------==========================================================================
+Sequence: Sequence 5
+==========================================================================
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 4
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 17 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Shift = 6.5
+swA = 4
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 36 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 4
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 40 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 9
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 37 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 9
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 48 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 9
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 20 sec.
+-------------------------------------------------------------------------Parameter Values:
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 18 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+tet = 1.2217305
+Shift = 6.5
+swA = 12
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 44 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 12
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 38 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2217305
+Shift = 6.5
+swA = 12
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 4
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 43 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 4
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 20 sec.
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 19 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 4
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 9
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 37 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 9
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 50 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 9
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 22 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 12
+swB = 4
+Structure update: Successful
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 20 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 12
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 21 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.2915436
+Shift = 6.5
+swA = 12
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 42 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 4
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 4
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 21 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 4
+swB = 12
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 21 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 9
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 19 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 9
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 49 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 9
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 35 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 12
+swB = 4
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 22 of 23
+
+CST MICROWAVE STUDIO - Parameter Sweep Results *** University Version ***
+
+08/01/2020 - 16:05
+
+swA = 12
+swB = 9
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 1 min., 19 sec.
+-------------------------------------------------------------------------Parameter Values:
+tet = 1.3613568
+Shift = 6.5
+swA = 12
+swB = 12
+Structure update: Successful
+Solver: Successful
+Solver time: 0 hours, 0 min., 41 sec.
+-------------------------------------------------------------------------==========================================================================
+Total solver time: 1 hours, 37 min., 0 sec.
+==========================================================================
+
+File: C:\Users\ab792\Desktop\CST\Dif80_validation\Model\3D\Model.mod
+
+Page 23 of 23
+
+

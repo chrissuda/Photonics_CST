@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+ab792
+[Mesh Cells]
+
+[Mesh Type]
+Tetrahedral
+[Last Problem Type]
+Optical
+[Last Solver Type]
+HF Frequency Domain
+[Last Solver Type Abb]
+f
+[Results]
+Unavailable
+[Modeler Unique ID]
+5:exercise.cst?1886152fd8bb6c6832be3a00f14d66a2?12057:numberofparameters=4::fport=zmin>fmode=1>zre=0>zim=0?fport=zmin>fmode=2>zre=0>zim=0?fport=zmax>fmode=1>zre=0>zim=0?fport=zmax>fmode=2>zre=0>zim=0::h?phi?theta?w
+[Comment]

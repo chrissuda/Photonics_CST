@@ -1,0 +1,15 @@
+FeatureKeywords:string:meshloading:problem_class_only, RESULTMANAGER:RESULTFLAG:0, mesh:workflow:boolean, mesh:workflow:boolean:advanced, mesh:lib:blsurf, mesh:lib:ghs3d, la:iterative, la:precond:pdss5, la:parallel_excitation:block, solver:hf:fd:samples:24, background:normal, boundary:electric:zmin, boundary:expanded open:zmax, boundary:open:ConvPML, boundary:unit cell:xmax, boundary:unit cell:xmin, boundary:unit cell:ymax, boundary:unit cell:ymin, lineqssolver:setting:acceleratedrestart, mesh:tet, mesh:tet:autocurvature, mesh:tet:curved, mesh:tet:curved:3, monitor:3D:freq, monitor:e-field, monitor:power:1d, solver:hf:fd, solver:hf:fd:generalpurpose:tet, solver:hf:fd:order:2, solver:hf:fd:portloss, source:floquet, units:Capacitance:pF, units:Conductance:S, units:Current:A, units:Frequency:GHz, units:Inductance:nH, units:Length:mm, units:Resistance:Ohm, units:Temperature:Kelvin, units:Time:s, units:Voltage:V, solver:pp:sparameter:sensitivityanalysis, solver:pp:sparameter:basicbranch, solver:pp:sparameter:unnorm, solver:pp:sparameter:updatebalance, acceleration:cpu, lineqssolver:setting:auto, lineqssolver:setting:treecotree, mesh:tet:adaptive
+LastWorkflowState:string:tetmesh:success
+solver_hf_tet_fd/InitialFreePhysicalInMB:int:1728
+solver_hf_tet_fd/MaxResidentSizeInMB:int:1014
+solver_hf_tet_fd/MaxResidentSizeMiB:int:952
+solver_hf_tet_fd/MinFreePhysicalInMB:int:958
+solver_pp/InitialFreePhysicalInMB:int:2372
+solver_pp/MaxResidentSizeInMB:int:23
+solver_pp/MaxResidentSizeMiB:int:6
+solver_pp/MinFreePhysicalInMB:int:2364
+tetmesh/InitialFreePhysicalInMB:int:1533
+tetmesh/MaxResidentSizeInMB:int:49
+tetmesh/MaxResidentSizeMiB:int:55
+tetmesh/MinFreePhysicalInMB:int:1511
+---
