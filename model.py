@@ -25,7 +25,7 @@ class CSTModel(nn.Module):
         self.fc5 = nn.Linear(hidden_size_2, hidden_size_3)
         nn.init.kaiming_normal_(self.fc5.weight)
 
-        self.fc6 = nn.Linear(hidden_size_3, num_classes)
+        self.fc6 = nn.Linear(hidden_size_2, num_classes)
         nn.init.kaiming_normal_(self.fc6.weight)
 
     def forward(self, x):
@@ -35,12 +35,12 @@ class CSTModel(nn.Module):
         x=self.bn1(x)
 
         x = F.relu(self.fc3(x))
-        x=self.bn2(x)
+        # x=self.bn2(x)
 
-        x = F.relu(self.fc4(x))
-        x=self.bn3(x)
+        # x = F.relu(self.fc4(x))
+        # x=self.bn3(x)
 
-        x = F.relu(self.fc5(x))
+        # x = F.relu(self.fc5(x))
         score = F.relu(self.fc6(x))
 
         return score

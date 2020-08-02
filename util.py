@@ -3,9 +3,10 @@ from tqdm import tqdm
 from statistics import mean
 import wandb
 
-def train(model,optimizer,trainloader,valloader,criterion,device,epochs=2):
+def train(model,optimizer,trainloader,valloader,criterion,device,isWandb=False,epochs=2):
 	#Initialize wandb
-	#wandb.init(project="CST")
+	if isWandb:
+		wandb.init(project="CST")
 
 	# Using GPU or CPU
 	model = model.to(device=device)  # move the model parameters to CPU/GPU
@@ -35,31 +36,33 @@ def train(model,optimizer,trainloader,valloader,criterion,device,epochs=2):
 			optimizer.step()
 
 		#Evaluate the model after every epoch
-		val_loss,val_ShiftDiff,val_swADiff,val_swBDiff=evaluate(model,valloader,criterion,device)
+		val_loss,val_ShiftErr,val_swAErr,val_swBErr=evaluate(model,valloader,criterion,device)
 		print("Epochs:",e," train_loss:",round(train_loss.item(),2)," val_loss:",val_loss,
-			" ShiftDiff:",val_ShiftDiff*100,"%",
-			" swADiff:",val_swADiff*100,"%",
-			" swBDiff:",val_swBDiff*100,"%\n")
+			" ShiftErr:",val_ShiftErr*100,"%",
+			" swAErr:",val_swAErr*100,"%",
+			" swBErr:",val_swBErr*100,"%\n")
 
-		# #Log results to wandb
-		# wandb.log({
-		# 		"Epoch":e,
-		# 		"train_loss":train_loss,
-		# 		"val_loss":val_loss,
-		# 		"ShiftDiff":val_ShiftDiff,
-		# 		"swADiff:":val_swADiff,
-		# 		"swBDiff":val_swBDiff
-		# 		})
+		#Log results to wandb
+		if isWandb:
+			wandb.log({
+					"Epoch":e,
+					"train_loss":train_loss,
+					"val_loss":val_loss,
+					"ShiftErr":val_ShiftErr,
+					"swAErr:":val_swAErr,
+					"swBErr":val_swBErr
+					})
 
 	return model
 
 
 def evaluate(model,loader,criterion,device):
-	loss,ShiftDiff,swADiff,swBDiff=0,0,0,0
-	lossList=[]
-	ShiftDiffList,swADiffList,swBDiffList=[],[],[]
+	#Calculate the running sum
+	loss,ShiftErr,swAErr,swBErr=0,0,0,0
 	
-	model = model.to(device=device)  # move the model parameters to CPU/GPU
+	# move the model parameters to CPU/GPU
+	model = model.to(device=device)  
+	# Put model into evaluation model
 	model.eval()
 
 	with torch.no_grad():
@@ -70,18 +73,18 @@ def evaluate(model,loader,criterion,device):
 			target=model(x)
 
 			loss+=criterion(target,y).item()
-			ShiftDiff+=(torch.mean((torch.abs(target[:,0]-y[:,0])/y[:,0]))).item()
-			swADiff+=(torch.mean((torch.abs(target[:,1]-y[:,1])/y[:,1]))).item()
-			swBDiff+=(torch.mean((torch.abs(target[:,2]-y[:,2])/y[:,2]))).item()
+			ShiftErr+=(torch.mean((torch.abs(target[:,0]-y[:,0])/y[:,0]))).item()
+			swAErr+=(torch.mean((torch.abs(target[:,1]-y[:,1])/y[:,1]))).item()
+			swBErr+=(torch.mean((torch.abs(target[:,2]-y[:,2])/y[:,2]))).item()
 
 	#Update i
 	#i is 0 in the first loop, which suppose to be 1 instead.
 	i+=1 
 
 	loss=round(loss/i,2)
-	ShiftDiff=round(ShiftDiff/i,4)
-	swADiff=round(swADiff/i,4)
-	swBDiff=round(swBDiff/i,4)
+	ShiftErr=round(ShiftErr/i,4)
+	swAErr=round(swAErr/i,4)
+	swBErr=round(swBErr/i,4)
 
-	return loss,ShiftDiff,swADiff,swBDiff
+	return loss,ShiftErr,swAErr,swBErr
 

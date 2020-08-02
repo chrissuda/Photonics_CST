@@ -22,7 +22,7 @@ valloader = torch.utils.data.DataLoader(valset, batch_size=batch_size,
                                          shuffle=False)
 
 #Set up the model
-model=CSTModel(2,15,100,15,3)
+model=CSTModel(2,15,20,15,3)
 for param in model.parameters():
         param.requires_grad = True
         
