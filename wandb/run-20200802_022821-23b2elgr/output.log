@@ -1,0 +1,8 @@
+Device: cuda
+Epochs: 1  train_loss: 45.84459686279297  val_loss: 38.2976  ShiftDiff: 100.0 %  swADiff: 100.0 %  swBDiff: 100.0 %
+Traceback (most recent call last):
+  File "main.py", line 34, in <module>
+    model=train(model,optimizer,trainloader,valloader,criterion,device,epochs=20)
+  File "/home/students/Photonics_CST/util.py", line 50, in train
+    "swADiff:":val_swaDiff,
+NameError: name 'val_swaDiff' is not defined

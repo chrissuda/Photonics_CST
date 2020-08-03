@@ -1,0 +1,27 @@
+{
+    "root": "/home/students/Photonics_CST",
+    "program": "main.py",
+    "git": {
+        "remote": "https://github.com/chrissuda/Photonics_CST.git",
+        "commit": "004e8eefdb47d09e0b2f233aadb8001298baf684"
+    },
+    "email": "ab792638826@gmail.com",
+    "codePath": "main.py",
+    "startedAt": "2020-08-02T15:20:37.238597",
+    "host": "Payne",
+    "username": "students",
+    "executable": "/home/students/miniconda3/bin/python3",
+    "os": "Linux-4.18.0-25-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.6",
+    "gpu": "GeForce RTX 2080 Ti",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": "10.1.243",
+    "args": [],
+    "state": "finished",
+    "jobType": null,
+    "mode": "run",
+    "project": "CST",
+    "heartbeatAt": "2020-08-02T15:20:46.537866",
+    "exitcode": 0
+}
