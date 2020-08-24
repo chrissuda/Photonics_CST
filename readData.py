@@ -1,11 +1,6 @@
 import json
-
+import csv
 def validateDataParam(data,param):
-	#See if all the data's frequency are at 10GHz
-	for i in range(len(data)):
-		if data[i]["x"]!=10.0:
-			raise ValueError("The:"+str(i)+"th of data: frequency is not equal to 10")
-
 	#See if the number of dataList is equal to paramList
 	if len(data)!=len(param):
 		print("Data:",len(data)," Param:",len(param))
@@ -15,35 +10,63 @@ def validateDataParam(data,param):
 	print("Data and Param Validation Test pass!!!")
 
 def readParam(file):
-	byteOfTet=len("tet")
-	byteOfShift=len("Shift")
-	byteOfSwA=len("swA")
-	byteOfSwB=len("swB")
+	#Create a list to hold dict data
 	param=[]
 
-	text_file = open(file, "r")
-	lines = text_file.readlines()
-	for line in lines:
-		if line.find("tet")!=-1:
-			param.append({"tet":float(line[byteOfTet+3:])})
-		elif line.find("Shift")!=-1:
-			param[-1]["Shift"]=float(line[byteOfShift+3:])
-		elif line.find("swA")!=-1:
-			param[-1]["swA"]=float(line[byteOfSwA+3:])
-		elif line.find("swB")!=-1:
-			param[-1]["swB"]=float(line[byteOfSwB+3:])
-		else:
-			pass
+	#Reading training params file
+	if "train" in file: 
+		with open(file,"r") as paramFile:
+			lines=csv.DictReader(paramFile)
+			for line in lines:
+				del line["3D Run ID"]
+				param.append(line)
+		
+	#Reading validation params file
+	elif "validation" in file:
+		byteOfTet=len("tet")
+		byteOfShift=len("Shift")
+		byteOfSwA=len("swA")
+		byteOfSwB=len("swB")
 
-	text_file.close()
+		paramFile = open(file, "r")
+		lines = paramFile.readlines()
+		for line in lines:
+			if line.find("tet")!=-1:
+				param.append({"tet":float(line[byteOfTet+3:])})
+			elif line.find("Shift")!=-1:
+				param[-1]["Shift"]=float(line[byteOfShift+3:])
+			elif line.find("swA")!=-1:
+				param[-1]["swA"]=float(line[byteOfSwA+3:])
+			elif line.find("swB")!=-1:
+				param[-1]["swB"]=float(line[byteOfSwB+3:])
+			else:
+				pass
+
+	else:
+		raise ValueError("File name must contain train or validation")
+
+	paramFile.close()
 	return param
 
 def readData(file):
-	data=[]
-	step=1004 #Only extrct the data whose frequency=10GHz
-
+	#Open data file
 	text_file = open(file, "r")
 	lines = text_file.readlines()
+
+	#Create a list to hold data
+	data=[]
+
+	#Reading train data file
+	if "train" in file:
+		step=4
+
+	#Reading validation data file
+	elif "validation" in file:
+		step=1004 #Only extrct the data whose frequency=10GHz
+
+	else:
+		raise ValueError("File name must contain train or validation")
+
 	for line in lines[2::step]:
 		num=line.strip().split(" ")
 		dataDict={"x":float(num[0]),"y":float(num[-1])}
@@ -76,8 +99,8 @@ def storeData(newData_file,data=None,param=None,dataFile=None,paramFile=None):
 
 
 
-train_paramFile="data/train/train_paramLogFile.txt";
-train_dataFile="data/train/train_SZmax(6).Zmax(1).txt"
+train_paramFile="data/train/train_result_navigator.csv";
+train_dataFile="data/train/train_SZmax(6).Zmax(1)_total.txt"
 train_labelFile="data/train/train_label.json"
 
 val_paramFile="data/validation/val_paramLogFile.txt";
