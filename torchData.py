@@ -21,10 +21,10 @@ class CSTData(torch.utils.data.Dataset):
         data=self.label[i]
 
     # Change data into tensor format;
-        x=[data["tet"],data["y"]]
+        x=[float(data["tet"]),float(data["y"])]
         x=torch.as_tensor(x,dtype=torch.float32)  
 
-        y=[data["Shift"],data["swA"],data["swB"]]
+        y=[float(data["Shift"]),float(data["swA"]),float(data["swB"])]
         y=torch.as_tensor(y,dtype=torch.float32)   
 
         #Normalize the data if mean and std are provided

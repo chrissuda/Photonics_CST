@@ -4,17 +4,17 @@ from torchData import*
 from model import CSTModel
 import wandb
 
-batch_size=256
-epochs=100
+batch_size=128
+epochs=50
 
-train_labelFile="data/train/train_label.json"
-val_labelFile="data/validation/val_label.json"
+train_labelFile="./data/train/train_label.json"
+val_labelFile="./data/validation/val_label.json"
 mean,std=getMeanStd(train_labelFile)
 
 print("mean:",mean," std:",std)
 
-trainset=CSTData(train_labelFile,mean,std)
-valset=CSTData(val_labelFile,mean,std)
+trainset=CSTData(train_labelFile)
+valset=CSTData(val_labelFile)
 
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=batch_size,
                                           shuffle=True)
@@ -22,7 +22,7 @@ valloader = torch.utils.data.DataLoader(valset, batch_size=batch_size,
                                          shuffle=False)
 
 #Set up the model
-model=CSTModel(2,15,100,15,3)
+model=CSTModel(2,10,40,100,3)
 for param in model.parameters():
         param.requires_grad = True
         
@@ -39,3 +39,4 @@ model=train(model,optimizer,trainloader,valloader,criterion,device,isWandb=True,
 
 print("Finish")
 torch.save(model,"model.pt")
+wandb.save("model.pt")
