@@ -24,7 +24,7 @@ class CSTData(torch.utils.data.Dataset):
         x=[float(data["tet"]),float(data["y"])]
         x=torch.as_tensor(x,dtype=torch.float32)  
 
-        y=[float(data["Shift"]),float(data["swA"]),float(data["swB"])]
+        y=[float(data["h"]),float(data["Shift"]),float(data["swA"]),float(data["swB"])]
         y=torch.as_tensor(y,dtype=torch.float32)   
 
         #Normalize the data if mean and std are provided

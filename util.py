@@ -19,7 +19,6 @@ def train(model,optimizer,trainloader,valloader,criterion,device,isWandb=False,e
 			x = x.to(device=device, dtype=torch.float32)  # move to device, e.g. GPU
 			y = y.to(device=device, dtype=torch.float32) 
 			target = model(x)
-
 			#Calculate the loss with a pre-set Loss Function
 			train_loss = criterion(target,y)
 			
@@ -36,11 +35,9 @@ def train(model,optimizer,trainloader,valloader,criterion,device,isWandb=False,e
 			optimizer.step()
 
 		#Evaluate the model after every epoch
-		val_loss,val_ShiftErr,val_swAErr,val_swBErr=evaluate(model,valloader,criterion,device)
+		val_loss,val_hErr,val_ShiftErr,val_swAErr,val_swBErr=evaluate(model,valloader,criterion,device)
 		print("Epochs:",e," train_loss:",round(train_loss.item(),2)," val_loss:",val_loss,
-			" ShiftErr:",val_ShiftErr*100,"%",
-			" swAErr:",val_swAErr*100,"%",
-			" swBErr:",val_swBErr*100,"%\n")
+		" hErr:%.2f ShiftErr:%.2f swAErr:%.2f swBErr:%.2f" %(val_hErr,val_ShiftErr,val_swAErr,val_swBErr))
 
 		#Log results to wandb
 		if isWandb:
@@ -48,6 +45,7 @@ def train(model,optimizer,trainloader,valloader,criterion,device,isWandb=False,e
 					"Epoch":e,
 					"train_loss":train_loss,
 					"val_loss":val_loss,
+					"hErr":val_hErr,
 					"ShiftErr":val_ShiftErr,
 					"swAErr:":val_swAErr,
 					"swBErr":val_swBErr
@@ -58,7 +56,7 @@ def train(model,optimizer,trainloader,valloader,criterion,device,isWandb=False,e
 
 def evaluate(model,loader,criterion,device):
 	#Calculate the running sum
-	loss,ShiftErr,swAErr,swBErr=0,0,0,0
+	loss,hErr,ShiftErr,swAErr,swBErr=0,0,0,0,0
 	
 	# move the model parameters to CPU/GPU
 	model = model.to(device=device)  
@@ -73,18 +71,21 @@ def evaluate(model,loader,criterion,device):
 			target=model(x)
 
 			loss+=criterion(target,y).item()
-			ShiftErr+=(torch.mean((torch.abs(target[:,0]-y[:,0])/y[:,0]))).item()
-			swAErr+=(torch.mean((torch.abs(target[:,1]-y[:,1])/y[:,1]))).item()
-			swBErr+=(torch.mean((torch.abs(target[:,2]-y[:,2])/y[:,2]))).item()
+
+			hErr+=(torch.mean((torch.abs(target[:,0]-y[:,0])/y[:,0]))).item()
+			ShiftErr+=(torch.mean((torch.abs(target[:,1]-y[:,1])/y[:,1]))).item()
+			swAErr+=(torch.mean((torch.abs(target[:,2]-y[:,2])/y[:,2]))).item()
+			swBErr+=(torch.mean((torch.abs(target[:,3]-y[:,3])/y[:,3]))).item()
 
 	#Update i
 	#i is 0 in the first loop, which suppose to be 1 instead.
 	i+=1 
 
 	loss=round(loss/i,2)
+	hErr=round(hErr/i,4)
 	ShiftErr=round(ShiftErr/i,4)
 	swAErr=round(swAErr/i,4)
 	swBErr=round(swBErr/i,4)
 
-	return loss,ShiftErr,swAErr,swBErr
+	return loss,hErr,ShiftErr,swAErr,swBErr
 

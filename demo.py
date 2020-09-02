@@ -34,10 +34,12 @@ model.eval()
 target=model(x)
 
 #Print out the result
-Shift=round(target[0][0].item(),2)
-swA=round(target[0][1].item(),2)
-swB=round(target[0][2].item(),2)
-print("Shift:",Shift,
+h=round(target[0][0].item(),2)
+Shift=round(target[0][1].item(),2)
+swA=round(target[0][2].item(),2)
+swB=round(target[0][3].item(),2)
+print("h:",h,
+        " Shift:",Shift,
         " swA:",swA,
         " swB:",swB)
 

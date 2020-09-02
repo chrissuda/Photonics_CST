@@ -15,15 +15,15 @@ class CSTModel(nn.Module):
         nn.init.kaiming_normal_(self.fc2.weight)
         self.bn2=torch.nn.BatchNorm1d(hidden_size_2)
 
-        self.fc3 = nn.Linear(hidden_size_2, hidden_size_3)
-        nn.init.kaiming_normal_(self.fc3.weight)
-        self.bn3=torch.nn.BatchNorm1d(hidden_size_3)
+        # self.fc3 = nn.Linear(hidden_size_2, hidden_size_3)
+        # nn.init.kaiming_normal_(self.fc3.weight)
+        # self.bn3=torch.nn.BatchNorm1d(hidden_size_3)
 
-        self.fc4 = nn.Linear(hidden_size_3, hidden_size_3)
-        nn.init.kaiming_normal_(self.fc4.weight)
-        self.bn4=torch.nn.BatchNorm1d(hidden_size_3)
+        # self.fc4 = nn.Linear(hidden_size_3, hidden_size_3)
+        # nn.init.kaiming_normal_(self.fc4.weight)
+        # self.bn4=torch.nn.BatchNorm1d(hidden_size_3)
 
-        self.fc5 = nn.Linear(hidden_size_3, hidden_size_1)
+        self.fc5 = nn.Linear(hidden_size_2, hidden_size_1)
         nn.init.kaiming_normal_(self.fc5.weight)
 
         self.fc6 = nn.Linear(hidden_size_1, num_classes)
@@ -32,15 +32,15 @@ class CSTModel(nn.Module):
     def forward(self, x):
         # forward always defines connectivity
         x = F.relu(self.fc1(x))
-        #x=self.bn1(x)
+        x=self.bn1(x)
 
         x = F.relu(self.fc2(x))
-        #x=self.bn2(x)
+        x=self.bn2(x)
     
-        x = F.relu(self.fc3(x))
-        #x=self.bn3(x)
+        # x = F.relu(self.fc3(x))
+        # #x=self.bn3(x)
         
-        x = F.relu(self.fc4(x))
+        # x = F.relu(self.fc4(x))
         
         x = F.relu(self.fc5(x))
 
