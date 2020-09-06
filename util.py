@@ -65,12 +65,16 @@ def evaluate(model,loader,criterion,device):
 
 	with torch.no_grad():
 		for i,(x, y) in enumerate(loader):
+			# if i>2:
+			# 	break;
 			x=x.to(device=device) #move data to CPU/GPU
 			y=y.to(device=device)
 
 			target=model(x)
 
 			loss+=criterion(target,y).item()
+
+			#print("i:",i," target:",target,"\n\nTrue:",y,"\n")
 
 			hErr+=(torch.mean((torch.abs(target[:,0]-y[:,0])/y[:,0]))).item()
 			ShiftErr+=(torch.mean((torch.abs(target[:,1]-y[:,1])/y[:,1]))).item()

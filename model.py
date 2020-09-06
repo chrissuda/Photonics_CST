@@ -24,10 +24,10 @@ class CSTModel(nn.Module):
         # self.bn4=torch.nn.BatchNorm1d(hidden_size_3)
 
         self.fc5 = nn.Linear(hidden_size_2, hidden_size_1)
-        nn.init.kaiming_normal_(self.fc5.weight)
+        #nn.init.kaiming_normal_(self.fc5.weight)
 
         self.fc6 = nn.Linear(hidden_size_1, num_classes)
-        nn.init.kaiming_normal_(self.fc6.weight)
+        #nn.init.kaiming_normal_(self.fc6.weight)
 
     def forward(self, x):
         # forward always defines connectivity
@@ -48,7 +48,55 @@ class CSTModel(nn.Module):
         
         return score
 
-# Process individual data with this model
+class CSTModel2(nn.Module):
+    def __init__(self, input_size, hidden_size_1,hidden_size_2,num_classes):
+        super().__init__()
+        # assign layer objects to class attributes
+        self.fc1 = nn.Linear(1, 1)
+        nn.init.kaiming_normal_(self.fc1.weight)
+
+        self.fc7 = nn.Linear(1, 1)
+        nn.init.kaiming_normal_(self.fc7.weight)
+        
+        self.fc2 = nn.Linear(1, 1)
+        nn.init.kaiming_normal_(self.fc2.weight)
+
+        self.fc8 = nn.Linear(1, 1)
+        nn.init.kaiming_normal_(self.fc8.weight)
+
+
+        self.fc3 = nn.Linear(2, hidden_size_1)
+        nn.init.kaiming_normal_(self.fc3.weight)
+
+        self.fc4 = nn.Linear(hidden_size_1, hidden_size_2)
+        nn.init.kaiming_normal_(self.fc4.weight)
+
+        self.fc5 = nn.Linear(hidden_size_2, num_classes)
+        nn.init.kaiming_normal_(self.fc5.weight)
+
+        self.fc6 = nn.Linear(num_classes, num_classes)
+        nn.init.kaiming_normal_(self.fc6.weight)
+
+    def forward(self, x):
+        # forward always defines connectivity
+        x1 = F.relu(self.fc1(torch.unsqueeze(x[:,0],-1)))
+        x1=F.relu(self.fc7(x1))
+
+        x2 = F.relu(self.fc2(torch.unsqueeze(x[:,1],-1)))
+        x2=F.relu(self.fc8(x2))
+        #Concatenate layers
+        x = torch.cat((x1, x2), 1)
+
+        x = F.relu(self.fc3(x))
+        
+        x = F.relu(self.fc4(x))
+        
+        x = F.relu(self.fc5(x))
+
+        score = F.relu(self.fc6(x))
+        
+        return score
+
 
 
 class preModel(nn.Module):
