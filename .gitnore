@@ -6,3 +6,4 @@ exercise/*
 wandb/*
 __pycache__/*
 *.cst
+Logos/example/*
