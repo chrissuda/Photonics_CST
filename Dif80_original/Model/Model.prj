@@ -1,0 +1,19 @@
+[Version]
+2
+[Author]
+yradi
+[Mesh Cells]
+58,215
+[Mesh Type]
+Tetrahedral
+[Last Problem Type]
+High Frequency
+[Last Solver Type]
+HF Frequency Domain
+[Last Solver Type Abb]
+f
+[Results]
+Frequency Domain: S-Parameter
+[Modeler Unique ID]
+5:dif80.cst?95a5084f48370c5d1b87d6660017c6bc?13264:numberofparameters=7::fport=zmax>fmode=1>zre=0>zim=0?fport=zmax>fmode=2>zre=0>zim=0?fport=zmax>fmode=3>zre=0>zim=0?fport=zmax>fmode=4>zre=0>zim=0?fport=zmax>fmode=5>zre=0>zim=0?fport=zmax>fmode=6>zre=0>zim=0::shift?eps?h?p?swa?swb?tet
+[Comment]

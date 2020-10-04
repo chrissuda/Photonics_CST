@@ -41,11 +41,21 @@ def readParam(file):
 				pass
 
 	else:
-		#Reading training params file
+		'''
+		Reading training params .csv file
+		@variable param
+		[
+		{
+		"Shift":4,
+		"h":0.5,
+		"swA":1,
+		"swB":1,
+		"tet":1.22173
+		}]
+		'''
 		with open(file,"r") as paramFile:
 			lines=csv.DictReader(paramFile)
 			for line in lines:
-				#print(line)
 				del line["3D Run ID"]
 				param.append(line)
 
@@ -66,8 +76,18 @@ def readData(file):
 
 	#Reading training data file
 	else:
-		step=4
+		#Only extrct the data whose frequency=10GHz
+		step=4 
 
+	'''
+	Iterate through the txt file
+	Extract data if its frequency is at 10GHZ. 
+	@variable data 
+	[{
+	"x":10,
+	"y":reflectance
+	},]
+	'''
 	for line in lines[2::step]:
 		num=line.strip().split(" ")
 		dataDict={"x":float(num[0]),"y":float(num[-1])}
@@ -77,22 +97,45 @@ def readData(file):
 	return(data)
 
 
-#Input:[tet,y]
-#Label:[Shift,swa,swb]
 def storeData(newData_file,data=None,param=None,dataFile=None,paramFile=None):
 	if  dataFile!=None and paramFile!=None:
+		#Read parameters file
 		param=readParam(paramFile)
+
+		#Read data file
 		data=readData(dataFile)
+
+		#Check if two files are all correct
 		validateDataParam(data,param)
+
 	elif data!=None and param!=None:
 		pass
 	else:
 		raise Exception("Must provide (data and param) or (dataFile and paramFile) argument")
 
+	'''
+	Group param and data file together 
+	And store them in a single json file
+	@variable label:
+	[{
+    "x": 10.0,
+    "y": 0.00063410069,
+    "Shift": "4",
+    "h": "0.5",
+    "swA": "1",
+    "swB": "1",
+    "tet": "1.22173"
+  },] 
+	'''
+
+	#Group data and param file together
 	label=[]
 	for i in range(len(data)):
+		#Merge data and param two dict together
+		#and append it to label
 		label.append({**data[i],**param[i]})
 
+	#Store labels file in a .json file
 	with open(newData_file,"w") as f:
 		json.dump(label,f,indent=2)
 
@@ -104,8 +147,8 @@ train_paramFile="data/result_navigator_h.csv";
 train_dataFile="data/train_SZmax(6).Zmax(1)_h.txt"
 train_labelFile="data/label.json"
 
-val_paramFile="data/validation/val_paramLogFile.txt";
-val_dataFile="data/validation/val_SZmax(6).Zmax(1).txt"
-val_labelFile="data/validation/val_label.json"
+# val_paramFile="data/validation/val_paramLogFile.txt";
+# val_dataFile="data/validation/val_SZmax(6).Zmax(1).txt"
+# val_labelFile="data/validation/val_label.json"
 
 storeData(train_labelFile,dataFile=train_dataFile,paramFile=train_paramFile)

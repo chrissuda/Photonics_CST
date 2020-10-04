@@ -7,6 +7,7 @@ import json
 class CSTData(torch.utils.data.Dataset):
     def __init__(self,labelFile,mean=None,std=None):
         super().__init__()
+        #Load the file
         self.label=json.load(open(labelFile))
 
         #Change from list to tensor if mean is provided
@@ -20,7 +21,11 @@ class CSTData(torch.utils.data.Dataset):
     def __getitem__(self,i):            
         data=self.label[i]
 
-    # Change data into tensor format;
+    '''
+    Change data into tensor format;
+    @var x [tet,reflectance]
+    @var y [h,Shift,swA,swB]
+    '''
         x=[float(data["tet"]),float(data["y"])]
         x=torch.as_tensor(x,dtype=torch.float32)  
 
@@ -31,6 +36,7 @@ class CSTData(torch.utils.data.Dataset):
         if self.mean!=None:
             x=self.applyMeanStd(x)
         
+        #Return input(x) and output(y)
         return x,y
 
     def __len__(self):
